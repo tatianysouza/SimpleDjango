@@ -7,7 +7,7 @@ Este é um projeto simples de Django que implementa uma lista de tarefas com ope
 1. **Crie um ambiente virtual**:
 
     ```bash
-    python3 -m venv .venv
+    python -m venv .venv
     ```
 
 2. **Ative o ambiente virtual**:
@@ -15,7 +15,12 @@ Este é um projeto simples de Django que implementa uma lista de tarefas com ope
    - No Windows:
 
         ```bash
-        .venv\Scripts\activate
+        .\.venv\Scripts\activate
+        ```
+        
+   Caso dê erro tente esse código antes:
+        ```bash
+        Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
         ```
 
    - No Linux:
@@ -24,7 +29,7 @@ Este é um projeto simples de Django que implementa uma lista de tarefas com ope
         source .venv/bin/activate
         ```
 
-3. **Instale as dependências**:
+4. **Instale as dependências**:
 
     ```bash
     pip install -r requirements.txt
@@ -47,8 +52,8 @@ Este é um projeto simples de Django que implementa uma lista de tarefas com ope
 3. **Execute as migrações**:
 
     ```bash
-    python3 manage.py makemigrations
-    python3 manage.py migrate
+    python manage.py makemigrations
+    python manage.py migrate
     ```
 
 ## Executando o Projeto
@@ -56,7 +61,7 @@ Este é um projeto simples de Django que implementa uma lista de tarefas com ope
 1. Para executar o projeto, use o seguinte comando:
 
     ```bash
-    python3 manage.py runserver
+    python manage.py runserver
     ```
 
 ## Uso
